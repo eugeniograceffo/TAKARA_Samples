@@ -1,0 +1,290 @@
+
+bedtools_outputs/A01_brain_total_Aligned.out.bedtools.txt
+bedtools_outputs/A02_cerebellum_total_Aligned.out.bedtools.txt
+bedtools_outputs/A03_brain_cortex_Aligned.out.bedtools.txt
+bedtools_outputs/A04_brain_insula_Aligned.out.bedtools.txt
+bedtools_outputs/A05_brain_occipital_pole_Aligned.out.bedtools.txt
+bedtools_outputs/A06_brain_parietal_lobe_Aligned.out.bedtools.txt
+bedtools_outputs/A07_brain_postcentral_gyrus_Aligned.out.bedtools.txt
+bedtools_outputs/A08_brain_temporal_lobe_Aligned.out.bedtools.txt
+bedtools_outputs/A09_dorsal_root_ganglion_Aligned.out.bedtools.txt
+bedtools_outputs/A10_spinal_cord_total_Aligned.out.bedtools.txt
+bedtools_outputs/A11_heart_Aligned.out.bedtools.txt
+bedtools_outputs/A12_spleen_Aligned.out.bedtools.txt
+bedtools_outputs/A13_colon_Aligned.out.bedtools.txt
+bedtools_outputs/A14_small_intestine_Aligned.out.bedtools.txt
+bedtools_outputs/A15_stomach_Aligned.out.bedtools.txt
+bedtools_outputs/A16_adipose_tissue_Aligned.out.bedtools.txt
+bedtools_outputs/A17_adrenal_gland_Aligned.out.bedtools.txt
+bedtools_outputs/A18_kidney_Aligned.out.bedtools.txt
+bedtools_outputs/A19_liver_Aligned.out.bedtools.txt
+bedtools_outputs/A20_lung_Aligned.out.bedtools.txt
+bedtools_outputs/A21_pancreas_Aligned.out.bedtools.txt
+bedtools_outputs/A22_skeletal_muscle_Aligned.out.bedtools.txt
+bedtools_outputs/A23_smooth_muscle_Aligned.out.bedtools.txt
+bedtools_outputs/A24_thyroid_Aligned.out.bedtools.txt
+DESeq2_analysis_2vs2/.Rhistory
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/pcs/files-pane.pper
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/pcs/source-pane.pper
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/pcs/windowlayoutstate.pper
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/pcs/workbench-pane.pper
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/rmd-outputs
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/saved_source_markers
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/sources/prop/6C7181CF
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/sources/prop/7E3568F7
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/sources/prop/INDEX
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/c0p4gmk37skhc/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/c44129x0ragw3/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/c44129x0ragw3/000003.png
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/c7scn4rlvhcp2/000002.png
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/c7u47jk3rhmcy/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/ca4hhe1v6c75d/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cbp6lo9r5c1mp/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cbthw3b20wm60/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cdd99rc80x78y/000002.png
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cfeajanznk5x9/000002.png
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cg9whjsxc1ge6/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/chunks.json
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cjvke4inx5mf7/000002.png
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cl3753fbyu6lk/000002.png
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/co8y6d302inr0/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/ctwa4cyrihast/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cutf4zuw09ese/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cycbgmc5v8n9f/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/3957B579-DESeq2/1/s/c0p4gmk37skhc/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/3957B579-DESeq2/1/s/ca4hhe1v6c75d/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/3957B579-DESeq2/1/s/cg9whjsxc1ge6/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/3957B579-DESeq2/1/s/chunks.json
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/3957B579-DESeq2/1/s/co8y6d302inr0/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/3957B579-DESeq2/1/s/cycbgmc5v8n9f/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/c0dl0511jdk3s/000002.png
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/c31su1guvvh14/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/c37u57zywfgxy/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/c5fmij84ib5t2/000002.png
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/c8h10bqj68crm/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cal9bw3pcah7y/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cau9n1v8omd5b/000002.png
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cbxklxwdhqww4/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/ceklra7r3n2lm/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/chunks.json
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/clze2xwvfuxve/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cm3ypkmywszfh/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cm9bfpxfmzp2d/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cmrgc86u27z56/000002.png
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cn4umpp5b2hnu/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cn4umpp5b2hnu/000003.png
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cpw2rcf15sgke/000002.csv
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/csnlm3yrw65m6/000002.png
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/patch-chunk-names
+DESeq2_analysis_2vs2/.Rproj.user/shared/notebooks/paths
+DESeq2_analysis_2vs2/Clustering.pdf
+DESeq2_analysis_2vs2/DESeq2.html
+DESeq2_analysis_2vs2/DESeq2.nb.html
+DESeq2_analysis_2vs2/DESeq2.Rmd
+DESeq2_analysis_2vs2/gene_count_matrix_new.csv
+DESeq2_analysis_2vs2/GO_reference_list.csv
+DESeq2_analysis_2vs2/Heatmap.pdf
+DESeq2_analysis_2vs2/High_THRA1_vs_Low_THRA1_results.csv
+DESeq2_analysis_2vs2/Low_THRA1_vs_high_as_ref_results.csv
+DESeq2_analysis_2vs2/metadata.csv
+DESeq2_analysis_2vs2/PCA.pdf
+DESeq2_analysis_2vs2/reports.zip
+DESeq2_analysis_2vs2/RNA_Seq.Rproj
+DESeq2_analysis_2vs2/Significant_genes_results_0.05.csv
+DESeq2_analysis_2vs2/THRA_Exon9_Exon9b_counts.xlsx
+DESeq2_analysis_2vs2/transcript_count_matrix_new.csv
+DESeq2_analysis_2vs2/Volcano_plot.pdf
+DESeq2_analysis_3vs3/.DS_Store
+DESeq2_analysis_3vs3/.Rhistory
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/pcs/files-pane.pper
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/pcs/source-pane.pper
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/pcs/windowlayoutstate.pper
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/pcs/workbench-pane.pper
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/rmd-outputs
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/saved_source_markers
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/sources/prop/6C7181CF
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/sources/prop/7E3568F7
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/sources/prop/INDEX
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/c0p4gmk37skhc/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/c44129x0ragw3/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/c44129x0ragw3/000003.png
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/c7scn4rlvhcp2/000002.png
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/c7u47jk3rhmcy/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/ca4hhe1v6c75d/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cbp6lo9r5c1mp/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cbthw3b20wm60/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cdd99rc80x78y/000002.png
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cfeajanznk5x9/000002.png
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cg9whjsxc1ge6/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/chunks.json
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cjvke4inx5mf7/000002.png
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cl3753fbyu6lk/000002.png
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/co8y6d302inr0/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/ctwa4cyrihast/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cutf4zuw09ese/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/2F3E664F/unsaved-notebooks/FBE963EE/1/cycbgmc5v8n9f/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/3957B579-DESeq2/1/s/c0p4gmk37skhc/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/3957B579-DESeq2/1/s/ca4hhe1v6c75d/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/3957B579-DESeq2/1/s/cg9whjsxc1ge6/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/3957B579-DESeq2/1/s/chunks.json
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/3957B579-DESeq2/1/s/co8y6d302inr0/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/3957B579-DESeq2/1/s/cycbgmc5v8n9f/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/c0dl0511jdk3s/000002.png
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/c31su1guvvh14/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/c37u57zywfgxy/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/c5fmij84ib5t2/000002.png
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/c8h10bqj68crm/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cal9bw3pcah7y/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cau9n1v8omd5b/000002.png
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cbxklxwdhqww4/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/ceklra7r3n2lm/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/chunks.json
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/clze2xwvfuxve/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cm3ypkmywszfh/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cm9bfpxfmzp2d/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cmrgc86u27z56/000002.png
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cn4umpp5b2hnu/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cn4umpp5b2hnu/000003.png
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/cpw2rcf15sgke/000002.csv
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/9FFFC956-DESeq2/1/s/csnlm3yrw65m6/000002.png
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/patch-chunk-names
+DESeq2_analysis_3vs3/.Rproj.user/shared/notebooks/paths
+DESeq2_analysis_3vs3/DESeq2.html
+DESeq2_analysis_3vs3/DESeq2.Rmd
+DESeq2_analysis_3vs3/gene_count_matrix_3vs3.csv
+DESeq2_analysis_3vs3/GO_reference_list_3vs3.csv
+DESeq2_analysis_3vs3/GO_shinyGO/enrichment_3vs3_down.csv
+DESeq2_analysis_3vs3/GO_shinyGO/Enrichment_chart_3vs3_down.png
+DESeq2_analysis_3vs3/GO_shinyGO/Enrichment_chart_3vs3_up.png
+DESeq2_analysis_3vs3/GO_shinyGO/enrichmentPlotNetworkPathway3vs3_down.pdf
+DESeq2_analysis_3vs3/GO_shinyGO/enrichmentPlotNetworkPathway3vs3_down.tiff
+DESeq2_analysis_3vs3/GO_shinyGO/enrichmentPlotNetworkPathway_3vs3_up.pdf
+DESeq2_analysis_3vs3/GO_shinyGO/enrichmentPlotNetworkPathway_3vs3_up.tiff
+DESeq2_analysis_3vs3/GO_shinyGO/geneInfo_3vs3_down.csv
+DESeq2_analysis_3vs3/GO_shinyGO/geneInfo_3vs3_up.csv
+DESeq2_analysis_3vs3/GO_shinyGO/GO_Gropus_3vs3_down.csv
+DESeq2_analysis_3vs3/GO_shinyGO/GO_Gropus_3vs3_up.csv
+DESeq2_analysis_3vs3/GO_shinyGO/STRING_enrichmentComponent3vs3_down.csv
+DESeq2_analysis_3vs3/GO_shinyGO/STRING_enrichmentComponent_3vs3_up.csv
+DESeq2_analysis_3vs3/GO_shinyGO/STRING_enrichmentFunction_3vs3_up.csv
+DESeq2_analysis_3vs3/GO_shinyGO/STRING_enrichmentProcess_3vs3_down.csv
+DESeq2_analysis_3vs3/GO_shinyGO/STRING_enrichmentProcess_3vs3_up.csv
+DESeq2_analysis_3vs3/Heatmap.pdf
+DESeq2_analysis_3vs3/Low_THRA1_vs_high_as_ref_results.csv
+DESeq2_analysis_3vs3/metadata.csv
+DESeq2_analysis_3vs3/PCA.pdf
+DESeq2_analysis_3vs3/reports.zip
+DESeq2_analysis_3vs3/RNA_Seq.Rproj
+DESeq2_analysis_3vs3/Significant_genes_results_0.05.csv
+DESeq2_analysis_3vs3/THRA_Exon9_Exon9b_counts.xlsx
+DESeq2_analysis_3vs3/transcript_count_matrix_3vs3.csv
+DESeq2_analysis_3vs3/Volcano_plot.pdf
+GO/.DS_Store
+GO/GOrilla/GO_foldchange_negative.txt
+GO/GOrilla/GO_foldchange_positive.txt
+GO/GOrilla/GOCOMPONENT.png
+GO/GOrilla/GOFUNCTION.png
+GO/GOrilla/GOPROCESS.png
+GO/ShinyGO/.DS_Store
+GO/ShinyGO/downregulated_genes/Choromose affected.png
+GO/ShinyGO/downregulated_genes/Enrichment_chart_down.pdf
+GO/ShinyGO/downregulated_genes/Enrichment_chart_down.png
+GO/ShinyGO/downregulated_genes/enrichment_down.csv
+GO/ShinyGO/downregulated_genes/export-network_down.jpeg
+GO/ShinyGO/downregulated_genes/geneInfo_down.csv
+GO/ShinyGO/downregulated_genes/GO_Gropus_down.csv
+GO/ShinyGO/downregulated_genes/PPI.png
+GO/ShinyGO/upregulated_genes/Enrichment_chart.pdf
+GO/ShinyGO/upregulated_genes/Enrichment_chart.png
+GO/ShinyGO/upregulated_genes/enrichment_up.csv
+GO/ShinyGO/upregulated_genes/export-network_up.jpeg
+GO/ShinyGO/upregulated_genes/geneInfo_up.csv
+GO/ShinyGO/upregulated_genes/GO_Gropus_up.csv
+mosdepth_outputs/A01_brain_total_Aligned.out.regions.bed
+mosdepth_outputs/A02_cerebellum_total_Aligned.out.regions.bed
+mosdepth_outputs/A03_brain_cortex_Aligned.out.regions.bed
+mosdepth_outputs/A04_brain_insula_Aligned.out.regions.bed
+mosdepth_outputs/A05_brain_occipital_pole_Aligned.out.regions.bed
+mosdepth_outputs/A06_brain_parietal_lobe_Aligned.out.regions.bed
+mosdepth_outputs/A07_brain_postcentral_gyrus_Aligned.out.regions.bed
+mosdepth_outputs/A08_brain_temporal_lobe_Aligned.out.regions.bed
+mosdepth_outputs/A09_dorsal_root_ganglion_Aligned.out.regions.bed
+mosdepth_outputs/A10_spinal_cord_total_Aligned.out.regions.bed
+mosdepth_outputs/A11_heart_Aligned.out.regions.bed
+mosdepth_outputs/A12_spleen_Aligned.out.regions.bed
+mosdepth_outputs/A13_colon_Aligned.out.regions.bed
+mosdepth_outputs/A14_small_intestine_Aligned.out.regions.bed
+mosdepth_outputs/A15_stomach_Aligned.out.regions.bed
+mosdepth_outputs/A16_adipose_tissue_Aligned.out.regions.bed
+mosdepth_outputs/A17_adrenal_gland_Aligned.out.regions.bed
+mosdepth_outputs/A18_kidney_Aligned.out.regions.bed
+mosdepth_outputs/A19_liver_Aligned.out.regions.bed
+mosdepth_outputs/A20_lung_Aligned.out.regions.bed
+mosdepth_outputs/A21_pancreas_Aligned.out.regions.bed
+mosdepth_outputs/A22_skeletal_muscle_Aligned.out.regions.bed
+mosdepth_outputs/A23_smooth_muscle_Aligned.out.regions.bed
+mosdepth_outputs/A24_thyroid_Aligned.out.regions.bed
+Old analysis/.DS_Store
+Old analysis/DESeq2_analysis_old/.DS_Store
+Old analysis/DESeq2_analysis_old/Clustering.pdf
+Old analysis/DESeq2_analysis_old/DESeq2.html
+Old analysis/DESeq2_analysis_old/DESeq2.nb.html
+Old analysis/DESeq2_analysis_old/DESeq2.Rmd
+Old analysis/DESeq2_analysis_old/DESeq2_files/figure-html/unnamed-chunk-10-1.png
+Old analysis/DESeq2_analysis_old/DESeq2_files/figure-html/unnamed-chunk-12-1.png
+Old analysis/DESeq2_analysis_old/DESeq2_files/figure-html/unnamed-chunk-13-1.png
+Old analysis/DESeq2_analysis_old/DESeq2_files/figure-html/unnamed-chunk-14-1.png
+Old analysis/DESeq2_analysis_old/DESeq2_files/figure-html/unnamed-chunk-14-2.png
+Old analysis/DESeq2_analysis_old/DESeq2_files/figure-html/unnamed-chunk-14-3.png
+Old analysis/DESeq2_analysis_old/DESeq2_files/figure-html/unnamed-chunk-14-4.png
+Old analysis/DESeq2_analysis_old/DESeq2_files/figure-html/unnamed-chunk-15-1.png
+Old analysis/DESeq2_analysis_old/DESeq2_files/figure-html/unnamed-chunk-9-2.png
+Old analysis/DESeq2_analysis_old/gene_count_matrix.csv
+Old analysis/DESeq2_analysis_old/GO_reference_list.csv
+Old analysis/DESeq2_analysis_old/Heatmap.pdf
+Old analysis/DESeq2_analysis_old/High_THRA1_vs_Low_THRA1_results.csv
+Old analysis/DESeq2_analysis_old/Low_THRA1_vs_high_as_ref_results.csv
+Old analysis/DESeq2_analysis_old/PCA.pdf
+Old analysis/DESeq2_analysis_old/reports.zip
+Old analysis/DESeq2_analysis_old/RNA_Seq.Rproj
+Old analysis/DESeq2_analysis_old/Significant_genes_results_0.05.csv
+Old analysis/DESeq2_analysis_old/Significant_genes_results_0.05_HigherTHRA1.csv
+Old analysis/DESeq2_analysis_old/THRA_Exon9_Exon9b_counts.xlsx
+Old analysis/DESeq2_analysis_old/transcript_count_matrix.csv
+Old analysis/DESeq2_analysis_old/Volcano_plot.pdf
+Old analysis/DESeq2_analysis_old/Volcano_plot_no_relevel.pdf
+Old analysis/GO_old/GOrilla/GO_foldchange_negative.txt
+Old analysis/GO_old/GOrilla/GO_foldchange_positive.txt
+Old analysis/GO_old/GOrilla/GOCOMPONENT.png
+Old analysis/GO_old/GOrilla/GOFUNCTION.png
+Old analysis/GO_old/GOrilla/GOPROCESS.png
+Old analysis/GO_old/ShinyGO/downregulated_genes/Chromosome_enrichment.png
+Old analysis/GO_old/ShinyGO/downregulated_genes/Chromosome_negative.png
+Old analysis/GO_old/ShinyGO/downregulated_genes/DNA_type_negative.png
+Old analysis/GO_old/ShinyGO/downregulated_genes/Enrichment_chart_negative.pdf
+Old analysis/GO_old/ShinyGO/downregulated_genes/Enrichment_chart_negative.png
+Old analysis/GO_old/ShinyGO/downregulated_genes/enrichment_negative.csv
+Old analysis/GO_old/ShinyGO/downregulated_genes/enrichmentPlotNetworkPathway_negative.tiff
+Old analysis/GO_old/ShinyGO/downregulated_genes/geneInfo_negative.csv
+Old analysis/GO_old/ShinyGO/downregulated_genes/GO_terms_Tree_negative.tiff
+Old analysis/GO_old/ShinyGO/upregulated_genes/chromosome_distribution.png
+Old analysis/GO_old/ShinyGO/upregulated_genes/Distribution_DNA_type.png
+Old analysis/GO_old/ShinyGO/upregulated_genes/enrichment.csv
+Old analysis/GO_old/ShinyGO/upregulated_genes/Enrichment_chart.pdf
+Old analysis/GO_old/ShinyGO/upregulated_genes/Enrichment_chart.png
+Old analysis/GO_old/ShinyGO/upregulated_genes/enrichmentPlotNetworkPathway.pdf
+Old analysis/GO_old/ShinyGO/upregulated_genes/enrichmentPlotNetworkPathway.tiff
+Old analysis/GO_old/ShinyGO/upregulated_genes/geneInfo.csv
+Old analysis/GO_old/ShinyGO/upregulated_genes/GO_terms_Tree.pdf
+Old analysis/GO_old/ShinyGO/upregulated_genes/GO_terms_Tree.tiff
+Old analysis/Publication figures_old/Dispersion.png
+Old analysis/Publication figures_old/heatmap.png
+Old analysis/Publication figures_old/MA.png
+Old analysis/Publication figures_old/PCA.pdf
+Old analysis/Publication figures_old/Volcano_plot.pdf
+Publication figures/Dispersion.png
+Publication figures/heatmap.png
+Publication figures/MA.png
+Publication figures/PCA.pdf
+Publication figures/Volcano_plot.pdf
+.DS_Store
