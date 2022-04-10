@@ -294,3 +294,5 @@ multiqc_report_alignment_data/multiqc_fastqc.txt
 multiqc_report_alignment_data/multiqc_general_stats.txt
 multiqc_report_alignment_data/multiqc_sources.txt
 multiqc_report_alignment_data/multiqc_star.txt
+multiqc_report_alignment_data/multiqc_data.json
+multiqc_report_alignment_data/multiqc_picard_RnaSeqMetrics.txt
