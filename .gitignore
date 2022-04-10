@@ -288,3 +288,9 @@ Publication figures/MA.png
 Publication figures/PCA.pdf
 Publication figures/Volcano_plot.pdf
 .DS_Store
+multiqc_report_alignment.html
+multiqc_report_alignment_data/multiqc.log
+multiqc_report_alignment_data/multiqc_fastqc.txt
+multiqc_report_alignment_data/multiqc_general_stats.txt
+multiqc_report_alignment_data/multiqc_sources.txt
+multiqc_report_alignment_data/multiqc_star.txt
