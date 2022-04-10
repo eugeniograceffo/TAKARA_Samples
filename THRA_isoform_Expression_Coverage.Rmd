@@ -1,0 +1,130 @@
+---
+title: "THRA Isoform 1 and Isoform 2 Relative Expression"
+output:
+  html_document:
+    toc: True
+    toc_float: True
+    df_print: paged
+---
+
+INTRODUCTION to the Experiment
+
+A total of 24 samples of human tissues. RNA seq data. Read counts of exon 9a (Chr17:40089333) and exon 9b (Chr17:40089334)
+
+```{r}
+#load libraries
+library(tidyverse)
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+library(matrixStats)
+library(ggrepel)
+library(scales)
+library(readxl)
+
+```
+
+
+```{r}
+## load excel file
+
+THRA_Exon9_Exon9b_counts <- read_excel("THRA_Exon9_Exon9b_counts.xlsx")
+
+```
+
+
+```{r}
+### Lets graph the results
+graph_data <- THRA_Exon9_Exon9b_counts %>%
+  select(Sample, "THRA1"=THRA1, "THRA2"=THRA2)%>%
+  pivot_longer(!Sample, names_to = "Detector", values_to = "Reads_count")
+
+
+
+ggplot(graph_data, aes(x = Sample, y = Reads_count, fill = Detector)) +
+  geom_col( width=0.5, position=position_dodge(width=0.7)) +
+  scale_y_continuous("Count of reads") +
+  scale_fill_manual("", values = c("THRA1" = "darksalmon", "THRA2" = "#56B4E9")) +
+  ggtitle("THRA Isoform 1 and Isoform 2 Relative Expression") +
+  theme_light(base_size = 12) +
+  scale_x_discrete(guide = guide_axis(angle = -35)) +
+  theme(axis.title.x=element_blank())
+
+#ggplotly()
+```
+
+
+```{r}
+### Lets plot the difference of the percentage
+
+differential <- THRA_Exon9_Exon9b_counts %>%
+  mutate(delta_qPCR=THRA1-THRA2)%>%
+  select(Sample, delta_qPCR)%>%
+  arrange(desc(delta_qPCR)) %>%
+  mutate( order= row_number())
+
+  ggplot(differential, aes(x = order, y = delta_qPCR)) +
+  geom_point() +
+  geom_hline(yintercept=0, linetype="dashed", color = "black")+
+  scale_x_discrete("") +
+  ggtitle("THRA isoform expression pattern (THRA1/THRA2)") +
+  theme_light() +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) +
+  geom_segment(aes(xend=order,yend=0),linetype="dashed", color = "red")+
+   geom_text(aes(label=Sample),hjust=0, vjust=-1.0, angle = +35)+
+  annotate("text", x = 12, y = 500, label = "Higher THRA1") +
+  annotate("text", x = 12, y = -400, label = "Higher THRA2")+
+  scale_y_continuous(limits=c(-500, 500), expand=c(0.1,4)) 
+
+
+
+
+ ggplotly()   
+
+```
+
+```{r}
+### heatmap with continuos delta THRA1vsA2
+ggplot(differential, aes(1, reorder(Sample,delta_qPCR), fill=delta_qPCR)) +
+  geom_tile()+
+  ggtitle("THRA isoform expression pattern (THRA1/THRA2)") +
+  theme_light(base_size = 12)+
+  theme(axis.title.y=element_blank(),
+        axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) +
+  scale_fill_gradient2('delta_reads', limits=c(-350, 350), breaks = c( -350, -150, 0, 150, 350),  low = "#56B4E9", high = "darksalmon", guide="colorbar")
+
+ggsave("Heatmap_THRA1vsTHRA2_RNA_Seq.png" , device=png, dpi = 600, bg = "transparent", width = 20, height = 15, units = "cm" )
+```
+
+
+```{r}
+### heatmap with UP or DOWN visualization
+comparison_heatmap_up_down <- differential %>%
+  mutate(THRA1vsTHRA2=ifelse(delta_qPCR>0 , "Higher" , "Lower"))
+  
+
+
+ggplot(comparison_heatmap_up_down, aes(1, reorder(Sample,delta_qPCR), fill=THRA1vsTHRA2)) +
+  geom_tile()+
+  ggtitle("THRA isoform expression pattern (THRA1/THRA2)") +
+  theme_light(base_size = 12)+
+  theme(axis.title.y=element_blank(),
+        axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) +
+  scale_fill_manual(values = c("darksalmon", "#56B4E9"))
+
+ggsave("Heatmap_THRA1vsTHRA2_RNA_Seq_aut_aut.png" , device=png, dpi = 600, bg = "transparent", width = 20, height = 15, units = "cm" )
+```
+
+
+
+
+
+
+
