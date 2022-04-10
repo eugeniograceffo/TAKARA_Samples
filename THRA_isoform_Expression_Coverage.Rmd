@@ -15,13 +15,13 @@ A total of 24 samples of human tissues. RNA seq data. First-Stranded pair-end re
 #load libraries
 library(tidyverse)
 library(readr)
-library(dplyr)
 library(ggplot2)
 library(plotly)
 library(matrixStats)
 library(ggrepel)
 library(scales)
 library(readxl)
+library(dplyr)
 
 ```
 
@@ -32,7 +32,7 @@ library(readxl)
 metadata <- read_excel("metadata.xlsx")
 
 
-##Load all datasets
+##Load bedtools outputs
 
 file_links_bedtools <- list.files(path= "~/OneDrive - Charité - Universitätsmedizin Berlin/Schuelke_Lab/EG15_RNA_Seq/TAKARA_Samples/bedtools_outputs" , pattern = "*.txt", full.names=T)
 
@@ -51,16 +51,99 @@ for (x in file_links_bedtools) {
   table_sample <- mutate(table_sample, "Sample"=basename_sample)
   data_bedtools <- bind_rows(data_bedtools, table_sample)
   
+}
+
+data_bedtools
+
+##Load mosdepth outputs
+
+file_links_mosdepth <- list.files(path= "~/OneDrive - Charité - Universitätsmedizin Berlin/Schuelke_Lab/EG15_RNA_Seq/TAKARA_Samples/mosdepth_outputs" , pattern = "*.bed", full.names=T)
+
+
+# initialize an empty dataframe
+data_mosdepth <- data_frame("V1"=character(),
+                   "V2"=integer(),
+                   "V3"=integer(),
+                   "V4"=character(),
+                   "V5"=double(),
+                   "Sample"=character()) 
+
+for (x in file_links_mosdepth) {
+  table_sample <- read.delim(x, header = FALSE) ## read table
+  basename_sample <- str_remove(basename(x), "_Aligned.out.regions.bed")  ## get the sample name from the file path
+  table_sample <- mutate(table_sample, "Sample"=basename_sample)
+  data_mosdepth <- bind_rows(data_mosdepth, table_sample)
   
 }
 
+data_mosdepth
 
 ```
+
+```{r}
+## Let's rearrange the data in a useful way
+data_mosdepth <- data_mosdepth %>%
+  select(Sample, Isoform = V4, Reads_count =V5) %>%
+  spread(key="Isoform", value="Reads_count") %>%
+  mutate("Package" = as.factor("mosdepth")) 
+
+data_mosdepth
+
+data_bedtools <- data_bedtools %>%
+  select(Sample, Isoform = V4, Reads_count =V5) %>%
+  spread(key="Isoform", value="Reads_count")%>%
+  mutate("Package" = as.factor("bedtools"))
+
+data_bedtools
+```
+
+```{r}
+## Let's merge the two dataframes into one
+
+dataset <- full_join(data_mosdepth, data_bedtools)
+
+dataset
+```
+
+
+
+```{r}
+## Let's calkculate THRA1 (counts of 9b) and THRA2 (9a-9b)
+
+dataset <- dataset %>%
+  mutate("THRA1"= dataset$`9b`) %>%
+  mutate("THRA2"=dataset$`9a`-dataset$`9b`) %>%
+  rename("Read_counts_9a" = "9a") %>%
+  rename("Read_counts_9b" = "9b") %>%
+  relocate(Package, .after=Sample)
+
+dataset
+
+```
+```{r}
+## Let's add the final calculations
+
+dataset_final <- dataset %>%
+  mutate("Delta_A1-A2" = THRA1 - THRA2) %>%
+  mutate("THRA1_higher" = THRA1 > THRA2)
+
+dataset_final
+  
+```
+
+
+
+
+
+
+
+
 
 
 ```{r}
 ### Lets graph the results
-graph_data <- metadata %>%
+graph_data <- dataset_final %>%
+  filter(Package == "mosdepth") %>%
   select(Sample, "THRA1"=THRA1, "THRA2"=THRA2)%>%
   pivot_longer(!Sample, names_to = "Detector", values_to = "Reads_count")
 
