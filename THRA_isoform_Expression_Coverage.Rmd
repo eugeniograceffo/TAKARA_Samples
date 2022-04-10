@@ -9,7 +9,7 @@ output:
 
 INTRODUCTION to the Experiment
 
-A total of 24 samples of human tissues. RNA seq data. Read counts of exon 9a (Chr17:40089333) and exon 9b (Chr17:40089334)
+A total of 24 samples of human tissues. RNA seq data. First-Stranded pair-end reads. Read counts of exon 9a (Chr17:40089333) and exon 9b (Chr17:40089334)
 
 ```{r}
 #load libraries
@@ -27,16 +27,40 @@ library(readxl)
 
 
 ```{r}
-## load excel file
+## load metadata file
 
-THRA_Exon9_Exon9b_counts <- read_excel("THRA_Exon9_Exon9b_counts.xlsx")
+metadata <- read_excel("metadata.xlsx")
+
+
+##Load all datasets
+
+file_links_bedtools <- list.files(path= "~/OneDrive - Charité - Universitätsmedizin Berlin/Schuelke_Lab/EG15_RNA_Seq/TAKARA_Samples/bedtools_outputs" , pattern = "*.txt", full.names=T)
+
+
+# initialize an empty dataframe
+data_bedtools <- data_frame("V1"=character(),
+                   "V2"=integer(),
+                   "V3"=integer(),
+                   "V4"=character(),
+                   "V5"=double(),
+                   "Sample"=character()) 
+
+for (x in file_links_bedtools) {
+  table_sample <- read.delim(x, header = FALSE) ## read table
+  basename_sample <- str_remove(basename(x), "_Aligned.out.bedtools.txt")  ## get the sample name from the file path
+  table_sample <- mutate(table_sample, "Sample"=basename_sample)
+  data_bedtools <- bind_rows(data_bedtools, table_sample)
+  
+  
+}
+
 
 ```
 
 
 ```{r}
 ### Lets graph the results
-graph_data <- THRA_Exon9_Exon9b_counts %>%
+graph_data <- metadata %>%
   select(Sample, "THRA1"=THRA1, "THRA2"=THRA2)%>%
   pivot_longer(!Sample, names_to = "Detector", values_to = "Reads_count")
 
@@ -58,7 +82,7 @@ ggplot(graph_data, aes(x = Sample, y = Reads_count, fill = Detector)) +
 ```{r}
 ### Lets plot the difference of the percentage
 
-differential <- THRA_Exon9_Exon9b_counts %>%
+differential <- metadata %>%
   mutate(delta_qPCR=THRA1-THRA2)%>%
   select(Sample, delta_qPCR)%>%
   arrange(desc(delta_qPCR)) %>%

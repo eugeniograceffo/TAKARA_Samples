@@ -296,3 +296,4 @@ multiqc_report_alignment_data/multiqc_sources.txt
 multiqc_report_alignment_data/multiqc_star.txt
 multiqc_report_alignment_data/multiqc_data.json
 multiqc_report_alignment_data/multiqc_picard_RnaSeqMetrics.txt
+metadata.xlsx
