@@ -27,6 +27,9 @@ library(dplyr)
 
 
 ```{r}
+## set paths for output figure
+path_plots <- "~/OneDrive - Charité - Universitätsmedizin Berlin/Schuelke_Lab/EG15_RNA_Seq/TAKARA_Samples/THRA_isoform_Expression_Coverage"
+
 ## load metadata file
 
 metadata <- read_excel("metadata.xlsx")
@@ -267,5 +270,22 @@ ggsave("Heatmap_THRA1vsTHRA2_RNA_Seq_aut_aut.png" , device=png, dpi = 600, bg = 
 
 
 
+```{r}
+###Lets compare the methods
 
+
+### heatmap with continuos delta
+ggplot(dataset_final, aes(Package, reorder(Sample,`Delta_A1-A2`) , fill=`Delta_A1-A2`)) +
+  geom_tile()+
+  ggtitle("Delta comparison between methods (THRA1/THRA2)") +
+  theme_light(base_size = 12)+
+  theme(axis.title.y=element_blank()) +
+  theme(axis.title.x=element_blank()) +
+  scale_fill_gradient2('delta', breaks = c(-230, 0,  250),  low = "#56B4E9", high = "darksalmon", guide="colorbar")
+```
+
+```{r}
+## save
+ggsave("Heatmap_methods_comparison.png" , device=png, dpi = 600, path = path_plots, bg = "transparent", width = 20, height = 15, units = "cm" )
+```
 
