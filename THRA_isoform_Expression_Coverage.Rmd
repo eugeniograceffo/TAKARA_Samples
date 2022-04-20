@@ -231,8 +231,8 @@ heatmap_data_percentage$Sample <- factor(heatmap_data_percentage$Sample, levels 
 ggplot(heatmap_data_percentage, aes(x=Sample, y=THRA1_Percentage, label=THRA1_Percentage)) + 
   geom_bar(stat='identity', aes(fill=THRA1_higher), width=.5)  +
    theme_light(base_size = 12)+
-  scale_fill_manual(name="Isoform abundance", 
-                    labels = c("higher THRA1", "higher THRA2"), 
+  scale_fill_manual(name="Predominant Isoform", 
+                    labels = c("THRA1", "THRA2"), 
                     values = c("TRUE"="darksalmon", "FALSE"="#56B4E9")) + 
   scale_y_continuous("% THRA1" ,limits=c(0, 100))+ 
   geom_hline(yintercept=50, linetype="dashed", color = "black")+
@@ -249,8 +249,8 @@ ggsave("THRA1vsA2_mosdepth_percentages.png" , device=png, dpi = 600, path = path
 ggplot(heatmap_data_percentage, aes(x=Sample, y=delta_percentage, label=delta_percentage)) + 
   geom_bar(stat='identity', aes(fill=THRA1_higher), width=.5)  +
    theme_light(base_size = 12)+
-  scale_fill_manual(name="Isoform abundance", 
-                    labels = c("higher THRA1", "higher THRA2"), 
+  scale_fill_manual(name="Predominant Isoform", 
+                    labels = c("THRA1", "THRA2"), 
                     values = c("TRUE"="darksalmon", "FALSE"="#56B4E9")) + 
   scale_y_continuous("Delta THRA1-THRA2 in %" ,limits=c(-100, 100))+
   labs(subtitle="Delta THRA1-THRA2 expressed in percentage", 
