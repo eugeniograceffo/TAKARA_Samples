@@ -129,7 +129,9 @@ dataset
 dataset_final <- dataset %>%
   mutate("delta_A1vsA2" = THRA1 - THRA2) %>%
   mutate("THRA1_Percentage" = round(THRA1/Read_counts_9a*100)) %>%
-  mutate("THRA1_higher" = THRA1 > THRA2)
+  mutate("THRA2_Percentage" = round(100-THRA1_Percentage)) %>%
+  mutate("THRA1_higher" = THRA1 > THRA2) %>%
+  mutate("delta_percentage" = THRA1_Percentage - THRA2_Percentage)
 
 dataset_final
   
@@ -216,6 +218,48 @@ ggplot(heatmap_data, aes(1, reorder(Sample,THRA1_Percentage), fill=THRA1_Percent
   scale_fill_gradient2('% of THRA1', limits=c(0, 100), breaks = c( 0, 50, 100),  low = "#56B4E9", high = "darksalmon", guide="colorbar",  midpoint = 50)
 
 ggsave("Heatmap_THRA1vsA2_mosdepth_percentages.png" , device=png, dpi = 600, path = path_plots, bg = "transparent", width = 20, height = 15, units = "cm" )
+```
+```{r}
+### Lets plot the percentage in a different way, so that the actual percentage is visible
+
+heatmap_data_percentage <- filter(dataset_final, Package == "mosdepth")
+heatmap_data_percentage <- heatmap_data_percentage[order(heatmap_data_percentage$delta_percentage), ]  # sort
+heatmap_data_percentage$Sample <- factor(heatmap_data_percentage$Sample, levels = heatmap_data_percentage$Sample)  # convert to factor to retain sorted order in plot.
+
+
+# Diverging Barcharts
+ggplot(heatmap_data_percentage, aes(x=Sample, y=THRA1_Percentage, label=THRA1_Percentage)) + 
+  geom_bar(stat='identity', aes(fill=THRA1_higher), width=.5)  +
+   theme_light(base_size = 12)+
+  scale_fill_manual(name="Isoform abundance", 
+                    labels = c("higher THRA1", "higher THRA2"), 
+                    values = c("TRUE"="darksalmon", "FALSE"="#56B4E9")) + 
+  scale_y_continuous("% THRA1" ,limits=c(0, 100))+ 
+  geom_hline(yintercept=50, linetype="dashed", color = "black")+
+  labs(subtitle="Percentage of THRA1 expression over the total of THRA", 
+       title= "THRA isoform expression pattern") + 
+    theme(axis.title.y=element_blank()) +
+  coord_flip()
+
+ggsave("THRA1vsA2_mosdepth_percentages.png" , device=png, dpi = 600, path = path_plots, bg = "transparent", width = 20, height = 15, units = "cm" )
+
+
+
+# Diverging Barcharts
+ggplot(heatmap_data_percentage, aes(x=Sample, y=delta_percentage, label=delta_percentage)) + 
+  geom_bar(stat='identity', aes(fill=THRA1_higher), width=.5)  +
+   theme_light(base_size = 12)+
+  scale_fill_manual(name="Isoform abundance", 
+                    labels = c("higher THRA1", "higher THRA2"), 
+                    values = c("TRUE"="darksalmon", "FALSE"="#56B4E9")) + 
+  scale_y_continuous("Delta THRA1-THRA2 in %" ,limits=c(-100, 100))+
+  labs(subtitle="Delta THRA1-THRA2 expressed in percentage", 
+       title= "THRA isoform expression pattern") + 
+    theme(axis.title.y=element_blank()) +
+  coord_flip()
+
+
+
 ```
 
 
