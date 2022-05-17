@@ -237,7 +237,8 @@ ggplot(heatmap_data_percentage, aes(x=Sample, y=THRA1_Percentage, label=THRA1_Pe
   scale_y_continuous("% THRA1" ,limits=c(0, 100))+ 
   geom_hline(yintercept=50, linetype="dashed", color = "black")+
   labs(subtitle="Percentage of THRA1 expression over the total of THRA", 
-       title= "THRA isoform expression pattern") + 
+       title= "THRA isoform expression pattern",
+       caption = "~58M uniquely mapped reads, n=1") +  
     theme(axis.title.y=element_blank()) +
   coord_flip()
 
