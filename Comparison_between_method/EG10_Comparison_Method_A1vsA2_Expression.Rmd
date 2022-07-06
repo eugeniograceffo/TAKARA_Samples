@@ -1,0 +1,101 @@
+---
+title: "EG10_Comparison_Method_A1vsA2_Expression"
+author: "Eugenio Graceffo"
+date: "9/6/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+INTRODUCTION to the Experiment
+
+Putting together the results from RNA Seq, qPCR and DNA Fragment Analysis
+
+```{r}
+#load libraries
+library(tidyverse)
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+library(matrixStats)
+library(ggrepel)
+library(scales)
+library(readxl)
+
+```
+
+
+```{r}
+##load files
+RNA_Seq <- read_csv("RNA_Seq_Results.csv")
+qPCR <- read_csv("qPCR_Results_normalized.csv")
+DNA_Frag <- read_csv("DNA_Frag_Results.csv")
+
+
+RNA_Seq 
+qPCR 
+DNA_Frag 
+
+```
+```{r}
+### rearrange the single dataset 
+
+RNA_Seq <- RNA_Seq %>%
+  select(Sample, delta_percentage) %>%
+  mutate("Method" = "RNA-Seq") %>%
+  mutate("order"=delta_percentage+10)
+
+
+DNA_Frag <- DNA_Frag %>%
+  mutate("delta_percentage"=(THRA_1-THRA_2)*100) %>%
+  mutate("Method" = "DNA Fragment Analysis") %>%
+  select(-THRA_1, -THRA_2)
+
+qPCR <- qPCR %>%
+  mutate("delta_percentage"=(delta_A1vsA2/(THRA1 +THRA2)*100)) %>%
+  select(Sample, delta_percentage) %>%
+  mutate("Method" = "RT-qPCR")
+  
+```
+
+
+```{r}
+### Lets merge the results into one file
+results <- RNA_Seq %>%
+  bind_rows(qPCR) %>%
+  bind_rows(DNA_Frag)
+
+results
+
+```
+
+
+
+```{r}
+### heatmap with continuos delta
+ggplot(results, aes(Method, reorder(Sample, delta_percentage), fill=delta_percentage)) +
+  geom_tile()+ 
+  labs(subtitle="Difference between THRA1 and THRA2 in percentage", 
+       title= "Comparison between the methods")+
+  theme_light(base_size = 12)+
+  theme(axis.title.y=element_blank()) +
+  theme(axis.title.x=element_blank(),
+        legend.justification = "bottom") +
+  scale_fill_gradient2('A1-A2 in %', limits=c(-100, 100), breaks = c(-100, -50, 0, 50,  100),  low = "#56B4E9", high = "darksalmon", guide="colorbar")
+
+
+ggsave("Comparison_methods.png" , device=png, dpi = 600, bg = "transparent", width = 20, height = 15, units = "cm" )
+
+
+```
+
+
+
+
+
+
+
